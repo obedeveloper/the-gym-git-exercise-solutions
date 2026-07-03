@@ -110,3 +110,71 @@ obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git swit
 obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git add .
 obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git push origin ft/bundle-2
 ```
+
+### Exercise 2
+
+```bash
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git pull origin main
+From github.com:obedeveloper/the-gym-git-exercise-solutions
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git branch ft/service-redesign
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git switch ft/service-redesign
+Switched to branch 'ft/service-redesign'
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git add .
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git commit -m "Add our services listing"
+[ft/service-redesign ff4a2c6] Add our services listing
+ 1 file changed, 6 insertions(+)
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git push origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 385 bytes | 385.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/obedeveloper/the-gym-git-exercise-solutions/pull/new/ft/service-redesign
+remote:
+To github.com:obedeveloper/the-gym-git-exercise-solutions.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git switch main
+Switched to branch 'main'
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git add .
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git commit -m "Add listing of our services"
+[main 2a81f56] Add listing of our services
+ 1 file changed, 5 insertions(+)
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 377 bytes | 377.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:obedeveloper/the-gym-git-exercise-solutions.git
+   b94a6b2..2a81f56  main -> main
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git switch ft/service-redesign
+Switched to branch 'ft/service-redesign'
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git diff main..ft/service-redesign
+diff --git a/services.html b/services.html
+index ec33712..e686668 100644
+--- a/services.html
++++ b/services.html
+@@ -8,9 +8,10 @@
+   <body>
+     <h1>Services</h1>
+
+-    <ol>
+-      <li>Xyz</li>
+-      <li>Rst</li>
+-    </ol>
++    <ul>
++      <li>Abcd</li>
++      <li>Opqr</li>
++      <li>Ijkl</li>
++    </ul>
+   </body>
+ </html>
+```
