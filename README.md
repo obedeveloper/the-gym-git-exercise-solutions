@@ -99,3 +99,14 @@ obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git rest
 obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git clean -fd
 Removing team.html
 ```
+
+## Bundle 2
+
+### Exercise 1
+
+```bash
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git branch ft/bundle-2
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git switch ft/bundle-2
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git add .
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git push origin ft/bundle-2
+```
