@@ -178,3 +178,151 @@ index ec33712..e686668 100644
    </body>
  </html>
 ```
+
+## Bundle 3
+
+### Exercise 1
+
+```bash
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git branch ft/team-page
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git switch ft/team-page
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git add .
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git commit -m "Add team page"
+[ft/team-page 3f167e7] Add team page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 team.html
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git push origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 483 bytes | 120.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/obedeveloper/the-gym-git-exercise-solutions/pull/new/ft/team-page
+remote:
+To github.com:obedeveloper/the-gym-git-exercise-solutions.git
+ * [new branch]      ft/team-page -> ft/team-page
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git switch main
+Switched to branch 'main'
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git branch ft/contact-page
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git switch ft/team-page
+Switched to branch 'ft/team-page'
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git log
+commit 3f167e70d56f5c1b2975ace9ad46578b64e3dce4 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: NIYOMUGISHA Obed <obed6@duck.com>
+Date:   Tue Jul 7 10:17:40 2026 +0200
+
+    Add team page
+
+commit a658341c1dc8efa8d6cdd7f393654f95bfcd7ce3 (origin/main, origin/HEAD, main, ft/contact-page)
+Author: NIYOMUGISHA Obed <obed6@duck.com>
+Date:   Fri Jul 3 08:57:28 2026 +0200
+
+    Add solutions for exercise 2, bundle 2
+
+commit 68411ef86c9aa76f2309acae0eabe390f75b351c
+Merge: 2a81f56 799ef5b
+Author: NIYOMUGISHA Obed <obed6@duck.com>
+Date:   Fri Jul 3 08:52:49 2026 +0200
+
+    Merge pull request #2 from obedeveloper/ft/service-redesign
+
+    Add our services listing
+
+commit 799ef5bb4ba8be8f17c4442cd6125ff7130f597f (origin/ft/service-redesign)
+Merge: ff4a2c6 2a81f56
+Author: NIYOMUGISHA Obed <obed6@duck.com>
+Date:   Fri Jul 3 08:52:31 2026 +0200
+
+    Merge branch 'main' into ft/service-redesign
+
+commit 2a81f56976597ae330f1cf946690e41054d30c78
+Author: NIYOMUGISHA Obed <obed6@duck.com>
+Date:   Fri Jul 3 08:46:13 2026 +0200
+
+    Add listing of our services
+
+commit ff4a2c6c9ecfc905adfd50ee7af6aed16f56d068 (ft/service-redesign)
+Author: NIYOMUGISHA Obed <obed6@duck.com>
+Date:   Fri Jul 3 08:42:34 2026 +0200
+
+    Add our services listing
+
+commit b94a6b292634a96d42d377be01253f33452a06e8
+Author: NIYOMUGISHA Obed <obed6@duck.com>
+Date:   Fri Jul 3 08:38:37 2026 +0200
+
+    Add solutions for exercise 1, bundle 2
+
+commit c829d897cac55be2adc1e041bd10005e379dc5d0
+Merge: 81e3d3d 4944e4d
+Author: NIYOMUGISHA Obed <obed6@duck.com>
+Date:   Fri Jul 3 08:23:58 2026 +0200
+
+    Merge pull request #1 from obedeveloper/ft/bundle-2
+
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git switch ft/contact-page
+Switched to branch 'ft/contact-page'
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git cherry-pick 3f167e70d56f5c1b2975ace9ad46578b64e3dce4
+[ft/contact-page 587cf4e] Add team page
+ Date: Tue Jul 7 10:17:40 2026 +0200
+ 1 file changed, 11 insertions(+)
+ create mode 100644 team.html
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git add .
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git commit -m "Add contact page"
+[ft/contact-page ec38d6b] Add contact page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 contact.html
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git push origin ft/contact-page
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 768 bytes | 128.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/obedeveloper/the-gym-git-exercise-solutions/pull/new/ft/contact-page
+remote:
+To github.com:obedeveloper/the-gym-git-exercise-solutions.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git branch ft/faq-page
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git switch ft/faq-page
+Switched to branch 'ft/faq-page'
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git add .
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git commit -m "Add faq page"
+[ft/faq-page eec2afd] Add faq page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 faq.html
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git push origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 446 bytes | 148.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/obedeveloper/the-gym-git-exercise-solutions/pull/new/ft/faq-page
+remote:
+To github.com:obedeveloper/the-gym-git-exercise-solutions.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git revert 3f167e70d56f5c1b2975ace9ad46578b64e3dce4
+[ft/faq-page eb18292] Revert "Add team page"
+ 1 file changed, 11 deletions(-)
+ delete mode 100644 team.html
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git push origin ft/faq-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 278 bytes | 139.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:obedeveloper/the-gym-git-exercise-solutions.git
+   eec2afd..eb18292  ft/faq-page -> ft/faq-page
+```
