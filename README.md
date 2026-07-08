@@ -326,3 +326,18 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To github.com:obedeveloper/the-gym-git-exercise-solutions.git
    eec2afd..eb18292  ft/faq-page -> ft/faq-page
 ```
+
+### Exercise 2
+
+```bash
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git switch ft/faq-page
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git branch ft/home-page-redesign
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git switch main
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git add .
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git commit -m "Add pricing page"
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git switch ft/home-page-redesign
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git rebase main
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git add .
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git commit -m "Add price"
+obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git push origin ft/home-page-redesign
+```
