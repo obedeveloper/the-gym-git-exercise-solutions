@@ -341,3 +341,35 @@ obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git add 
 obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git commit -m "Add price"
 obed@obed-HP-EliteBook-840-G3:~/Desktop/the-gym-git-exercise-solutions$ git push origin ft/home-page-redesign
 ```
+
+## Bundle 4
+
+### Exercise 1
+
+```bash
+obed@obed-HP-EliteBook-840-G3:~/Desktop/The Gym/git$ git remote add git-copy git@github.com:obedeveloper/the-gym-git-exercise-solutions-copy.git
+obed@obed-HP-EliteBook-840-G3:~/Desktop/The Gym/git$ git add .
+obed@obed-HP-EliteBook-840-G3:~/Desktop/The Gym/git$ git commit -m "Fix typo"
+[main 229a479] Fix typo
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+obed@obed-HP-EliteBook-840-G3:~/Desktop/The Gym/git$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 366 bytes | 91.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:obedeveloper/the-gym-git-exercise-solutions.git
+   352f495..229a479  main -> main
+obed@obed-HP-EliteBook-840-G3:~/Desktop/The Gym/git$ git push git-copy main
+Enumerating objects: 41, done.
+Counting objects: 100% (41/41), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (37/37), done.
+Writing objects: 100% (41/41), 8.47 KiB | 157.00 KiB/s, done.
+Total 41 (delta 13), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (13/13), done.
+To github.com:obedeveloper/the-gym-git-exercise-solutions-copy.git
+ * [new branch]      main -> main
+```
