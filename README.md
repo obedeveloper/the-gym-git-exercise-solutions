@@ -373,3 +373,68 @@ remote: Resolving deltas: 100% (13/13), done.
 To github.com:obedeveloper/the-gym-git-exercise-solutions-copy.git
  * [new branch]      main -> main
 ```
+
+### Exercise 2
+
+```bash
+obed@obed-HP-EliteBook-840-G3:~/Desktop/The Gym/git$ git branch ft/footer
+obed@obed-HP-EliteBook-840-G3:~/Desktop/The Gym/git$ git switch ft/footer
+Switched to branch 'ft/footer'
+obed@obed-HP-EliteBook-840-G3:~/Desktop/The Gym/git$ git add .
+obed@obed-HP-EliteBook-840-G3:~/Desktop/The Gym/git$ git commit -m "Add footer to the page"
+[ft/footer ba01b4e] Add footer to the page
+ 1 file changed, 1 insertion(+)
+obed@obed-HP-EliteBook-840-G3:~/Desktop/The Gym/git$ git add .
+obed@obed-HP-EliteBook-840-G3:~/Desktop/The Gym/git$ git commit -m "Add copyright"
+[ft/footer a7fa351] Add copyright
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+obed@obed-HP-EliteBook-840-G3:~/Desktop/The Gym/git$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 680 bytes | 170.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:obedeveloper/the-gym-git-exercise-solutions.git
+   229a479..f1bc648  main -> main
+obed@obed-HP-EliteBook-840-G3:~/Desktop/The Gym/git$ git push origin ft/footer
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 712 bytes | 118.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/obedeveloper/the-gym-git-exercise-solutions/pull/new/ft/footer
+remote:
+To github.com:obedeveloper/the-gym-git-exercise-solutions.git
+ * [new branch]      ft/footer -> ft/footer
+obed@obed-HP-EliteBook-840-G3:~/Desktop/The Gym/git$ git switch squashing
+Switched to branch 'squashing'
+obed@obed-HP-EliteBook-840-G3:~/Desktop/The Gym/git$ git merge --squash ft/footer
+Updating f1bc648..a7fa351
+Fast-forward
+Squash commit -- not updating HEAD
+ pricing.html | 1 +
+ 1 file changed, 1 insertion(+)
+obed@obed-HP-EliteBook-840-G3:~/Desktop/The Gym/git$ git commit -m "Merge with squash"
+[squashing 170e582] Merge with squash
+ 1 file changed, 1 insertion(+)
+obed@obed-HP-EliteBook-840-G3:~/Desktop/The Gym/git$ git push origin squashing
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 407 bytes | 101.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'squashing' on GitHub by visiting:
+remote:      https://github.com/obedeveloper/the-gym-git-exercise-solutions/pull/new/squashing
+remote:
+To github.com:obedeveloper/the-gym-git-exercise-solutions.git
+ * [new branch]      squashing -> squashing
+```
